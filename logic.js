@@ -13,14 +13,12 @@ date.innerText = today.toLocaleDateString('en-IN');
 let days = document.getElementById("day");
 let dayCount = today.getDay();
 // it returns the number representing the days starting from 0
-let day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-for (let i = 0; i <= day.length; i++) {
-    if (i + 1 == dayCount) {
+let day = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+for (let i = 0; i <=day.length; i++) {
+    if (i  == dayCount) {
         days.innerText = day[i];
     }
 }
-
-
 
 
 let create = document.getElementById("create");
@@ -49,6 +47,9 @@ create.addEventListener("click", () => {
     input_field.appendChild(inp_element);
     input_field.appendChild(button);
     
+    // chek box create
+    let chek_box = document.createElement("input");
+    chek_box.setAttribute("type","chekbox");
 
    
     let task_field = document.getElementById("task_field");
@@ -59,6 +60,11 @@ create.addEventListener("click", () => {
         task_field.innerHTML = task_text.value;
         input_field.innerText = " ";
 
+        let chek_box = document.createElement("input");
+        chek_box.style.padding = "0.5rem"
+
+        // chek_box.setAttribute("type","chekbox");
+        // input_field.innerHTML=chek;
     })
 
 })

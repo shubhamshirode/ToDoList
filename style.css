@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-color: black;
+    color: white;
 }
 ::-webkit-scrollbar{
     height: 0;
@@ -13,6 +15,7 @@
 }
 .title{
     width: 90%;
+    font-size: 1.2rem;
 }
 i {
     border: 0;
@@ -25,13 +28,15 @@ i {
 }
 
 .input {
-    height: 15vh;
+    height: 10vh;
 }
 
 .task {
     height: 50vh;
     overflow-y: scroll;
+    font-size: 1.2rem;
 }
+
 
 
 
